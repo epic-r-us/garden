@@ -4,6 +4,8 @@ on: push
 jobs:
   build-push:
     runs-on: ubuntu-latest
+    permissions:
+      packages: write
 
     env:
       IMAGE_NAME: ghcr.io/epic-r-us/garden
